@@ -1,0 +1,276 @@
+/* =====================================================
+RESPONSIVE DESIGN
+BREW HAVEN CAFE
+===================================================== */
+
+/* ==========================
+LAPTOP (1200px)
+========================== */
+
+@media (max-width:1200px){
+
+.hero h1{
+
+font-size:60px;
+
+}
+
+.about-preview .container,
+.reservation .container{
+
+grid-template-columns:1fr;
+
+}
+
+.footer-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+}
+
+/* =====================================================
+TABLET (992px)
+===================================================== */
+
+@media (max-width:992px){
+
+.navbar{
+
+padding:18px 5%;
+
+}
+
+.nav-links{
+
+display:none;
+
+}
+
+#menu-btn{
+
+display:block;
+font-size:28px;
+cursor:pointer;
+
+}
+
+.hero{
+
+padding:0 30px;
+
+}
+
+.hero h1{
+
+font-size:52px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.section-title h2{
+
+font-size:40px;
+
+}
+
+.gallery-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.newsletter form{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.newsletter input{
+
+width:100%;
+
+}
+
+}
+
+/* =====================================================
+MOBILE (768px)
+===================================================== */
+
+@media (max-width:768px){
+
+.hero{
+
+height:auto;
+
+padding:140px 20px 80px;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero h3{
+
+font-size:16px;
+
+}
+
+.hero p{
+
+font-size:17px;
+
+}
+
+.btn,
+.btn-outline{
+
+display:block;
+
+margin:15px auto;
+
+width:220px;
+
+text-align:center;
+
+}
+
+.features .container,
+.menu-grid,
+.barista-grid,
+.offer-grid,
+.testimonial-slider,
+.contact-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.gallery-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.about-text h2,
+.section-title h2,
+.newsletter h2{
+
+font-size:34px;
+
+}
+
+.stat-card h2{
+
+font-size:42px;
+
+}
+
+.footer-grid{
+
+gap:30px;
+
+}
+
+}
+
+/* =====================================================
+SMALL MOBILE (480px)
+===================================================== */
+
+@media (max-width:480px){
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.hero p{
+
+font-size:15px;
+
+}
+
+.logo h2{
+
+font-size:22px;
+
+}
+
+.section-title h2{
+
+font-size:28px;
+
+}
+
+.about-text h2{
+
+font-size:28px;
+
+}
+
+.newsletter input{
+
+padding:15px;
+
+}
+
+.whatsapp{
+
+width:55px;
+
+height:55px;
+
+font-size:28px;
+
+right:15px;
+
+bottom:20px;
+
+}
+
+#topBtn{
+
+width:50px;
+
+height:50px;
+
+left:15px;
+
+bottom:20px;
+
+}
+
+}
+
+/* =====================================================
+END OF RESPONSIVE.CSS PART 1
+
+🎉 responsive.css COMPLETED
+
+NEXT FILE:
+
+js/script.js
+
+===================================================== */

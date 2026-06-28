@@ -1,0 +1,506 @@
+/*=========================================
+BREW HAVEN CAFE
+ANIMATIONS.CSS
+==========================================*/
+
+/* Smooth Scroll */
+
+html{
+scroll-behavior:smooth;
+}
+
+/* Universal Transition */
+
+*{
+transition:0.35s ease;
+}
+
+/*=========================
+Fade In Animation
+==========================*/
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/*=========================
+Slide Left
+==========================*/
+
+@keyframes slideLeft{
+
+from{
+
+opacity:0;
+
+transform:translateX(-80px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+}
+
+/*=========================
+Slide Right
+==========================*/
+
+@keyframes slideRight{
+
+from{
+
+opacity:0;
+
+transform:translateX(80px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+}
+
+/*=========================
+Zoom In
+==========================*/
+
+@keyframes zoomIn{
+
+0%{
+
+opacity:0;
+
+transform:scale(.7);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+/*=========================
+Floating
+==========================*/
+
+@keyframes floating{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-10px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/*=========================
+Hero
+==========================*/
+
+.hero-content{
+
+animation:fadeIn 1.2s ease;
+
+}
+
+/*=========================
+Section Title
+==========================*/
+
+.section-title{
+
+animation:fadeIn 1s ease;
+
+}
+
+/*=========================
+Buttons
+==========================*/
+
+.btn{
+
+transition:.4s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+/*=========================
+Navbar
+==========================*/
+
+.navbar{
+
+animation:fadeIn .8s ease;
+
+}
+
+/*=========================
+Menu Cards
+==========================*/
+
+.menu-card{
+
+animation:zoomIn .8s ease;
+
+overflow:hidden;
+
+}
+
+.menu-card:hover{
+
+transform:translateY(-12px);
+
+box-shadow:0 20px 40px rgba(0,0,0,.2);
+
+}
+
+.menu-card img{
+
+transition:.5s;
+
+}
+
+.menu-card:hover img{
+
+transform:scale(1.1);
+
+}
+
+/*=========================
+Gallery
+==========================*/
+
+.gallery-item{
+
+overflow:hidden;
+
+animation:zoomIn .8s ease;
+
+}
+
+.gallery-item img{
+
+transition:.5s;
+
+}
+
+.gallery-item:hover img{
+
+transform:scale(1.12);
+
+}
+
+.gallery-overlay{
+
+opacity:0;
+
+transition:.4s;
+
+}
+
+.gallery-item:hover .gallery-overlay{
+
+opacity:1;
+
+}
+
+/*=========================
+Feature Cards
+==========================*/
+
+.feature-card{
+
+animation:fadeIn 1s ease;
+
+}
+
+.feature-card:hover{
+
+transform:translateY(-12px);
+
+}
+
+/*=========================
+Offer Cards
+==========================*/
+
+.offer-card{
+
+animation:zoomIn 1s ease;
+
+}
+
+.offer-card:hover{
+
+transform:scale(1.05);
+
+}
+
+/*=========================
+Statistics
+==========================*/
+
+.stat-card{
+
+animation:slideLeft .8s ease;
+
+}
+
+.stat-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+/*=========================
+Testimonials
+==========================*/
+
+.testimonial-card{
+
+animation:fadeIn .8s ease;
+
+}
+
+.testimonial-card:hover{
+
+transform:scale(1.03);
+
+}
+
+/*=========================
+Barista Cards
+==========================*/
+
+.barista-card{
+
+animation:zoomIn 1s ease;
+
+}
+
+.barista-card img{
+
+transition:.5s;
+
+}
+
+.barista-card:hover img{
+
+transform:scale(1.08);
+
+}
+
+/*=========================
+Timeline
+==========================*/
+
+.timeline-item{
+
+animation:slideRight .8s ease;
+
+}
+
+/*=========================
+Reservation Form
+==========================*/
+
+.reservation-form input,
+
+.reservation-form textarea,
+
+.reservation-form select{
+
+transition:.3s;
+
+}
+
+.reservation-form input:focus,
+
+.reservation-form textarea:focus,
+
+.reservation-form select:focus{
+
+transform:scale(1.02);
+
+box-shadow:0 0 15px rgba(139,69,19,.25);
+
+}
+
+/*=========================
+Newsletter
+==========================*/
+
+.newsletter{
+
+animation:fadeIn 1s ease;
+
+}
+
+/*=========================
+Footer Links
+==========================*/
+
+footer a:hover{
+
+padding-left:10px;
+
+}
+
+/*=========================
+Social Icons
+==========================*/
+
+.social-icons a{
+
+animation:floating 3s infinite;
+
+}
+
+.social-icons a:hover{
+
+transform:scale(1.2);
+
+}
+
+/*=========================
+WhatsApp Button
+==========================*/
+
+.whatsapp{
+
+position:fixed;
+
+bottom:25px;
+
+right:25px;
+
+width:65px;
+
+height:65px;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:30px;
+
+background:#25D366;
+
+color:#fff;
+
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+animation:floating 2s infinite;
+
+z-index:9999;
+
+text-decoration:none;
+
+}
+
+.whatsapp:hover{
+
+transform:scale(1.15);
+
+}
+
+/*=========================
+Images
+==========================*/
+
+img{
+
+max-width:100%;
+
+display:block;
+
+}
+
+/*=========================
+Cards
+==========================*/
+
+.feature-card,
+
+.menu-card,
+
+.offer-card,
+
+.gallery-item,
+
+.barista-card,
+
+.stat-card{
+
+transition:.4s;
+
+}
+
+/*=========================
+Page Hero
+==========================*/
+
+.page-hero{
+
+animation:fadeIn 1.2s ease;
+
+}
+
+/*=========================
+End
+==========================*/
